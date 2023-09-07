@@ -169,7 +169,7 @@ echo "net.ipv4.conf.$interface_name.force_igmp_version=2" >> /etc/sysctl.conf
 /sbin/sysctl -p
 
 #echo "Restarting the network service"
-#systemctl restart network
+systemctl restart network
 
 # Network Address Translation
 # You normally shouldn't need NAT, but it's necessary for software installation on the management and host instances.  That's
