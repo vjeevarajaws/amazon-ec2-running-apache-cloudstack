@@ -69,7 +69,7 @@ help() {
 
 [[ $# -ne 0 ]] || help
 
-long_opts=dns-ip:,efs,gateway-ip:,help,host-ip:,host-username:,key-pair:,netmask:,pod-cidr:,primary-storage-url:,public-traffic-cidr:,secondary-storage-url:,shared-network-cidr:,template-name:,template-url:
+long_opts=dns-ip:,efs,gateway-ip:,help,host1-ip:,host2-ip:,host-username:,key-pair:,netmask:,pod-cidr:,primary-storage-url:,public-traffic-cidr:,secondary-storage-url:,shared-network-cidr:,template-name:,template-url:
 
 ! parsed_opts=$(getopt --options "" --longoptions=$long_opts --name "$0" -- "$@")
 [[ ${PIPESTATUS[0]} -eq 0 ]] || help
